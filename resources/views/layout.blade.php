@@ -4,16 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title', 'Ing SW II')</title>
+
+    <style>
+        .active a{
+            color: darkcyan;
+            text-decoration: none;
+        }
+    </style>
+
 </head>
 <body>
-<nav>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/portfolio">Portfolio</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-</nav>
+    @include('partials.nav')
     <h1>Home</h1>
 <!--
     <h1>Home</h1>

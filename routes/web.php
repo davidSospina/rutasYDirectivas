@@ -57,9 +57,8 @@ Route::get('/', function () {
 */
 
 Route::view('/', 'home', 
-['nombre'=>'Ingenieria de software II']);
+['nombre'=>'Ingenieria de software II'])->name('home');
 
 Route::view('about', 'about')->name('about');
-Route::view('portfolio', 'portfolio')->name('portfolio');
+Route::get('portfolio', 'portfolioController@index')->name('portfolio');
 Route::view('contact', 'contact')->name('contact');
-
